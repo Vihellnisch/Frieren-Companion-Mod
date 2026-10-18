@@ -7,6 +7,10 @@ Unofficial and fan-made. Not affiliated with or endorsed by the creators or publ
 - **Minecraft** 1.21.1, **NeoForge** 21.1+
 - **Requires** [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib) 4.7+
 
+## Download
+
+Get the latest jar from the **[Releases page](https://github.com/Vihellnisch/Frieren-Companion-Mod/releases/latest)** and put it in your `mods` folder, next to GeckoLib.
+
 ## What's in it
 
 - **Frieren as a companion:** a relationship that grows from Stranger to Friend, Ally and Partner. She follows you, fights alongside you, heals you, trades, keeps a bag and her own armor, sleeps when you sleep, and comes back to her bed if she falls.
