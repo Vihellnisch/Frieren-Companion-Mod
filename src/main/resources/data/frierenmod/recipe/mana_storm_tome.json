@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "frierenmod:grimoire_ancient_spells" },
+    { "item": "minecraft:nether_star" },
+    { "item": "minecraft:amethyst_shard" }
+  ],
+  "result": { "id": "frierenmod:mana_storm_tome", "count": 1 }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PLP", "LBL", "PLP"],
+  "key": {
+    "P": { "item": "minecraft:paper" },
+    "L": { "item": "minecraft:lapis_lazuli" },
+    "B": { "item": "minecraft:book" }
+  },
+  "result": { "id": "frierenmod:grimoire_basic_magic", "count": 1 }
+}

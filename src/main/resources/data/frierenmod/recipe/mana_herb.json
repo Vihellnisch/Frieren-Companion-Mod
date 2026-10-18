@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:fern" },
+    { "item": "minecraft:blue_orchid" },
+    { "item": "minecraft:lapis_lazuli" }
+  ],
+  "result": { "id": "frierenmod:mana_herb", "count": 2 }
+}

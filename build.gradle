@@ -1,0 +1,96 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = mod_version
+group = mod_group_id
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'GeckoLib'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
+}
+
+// Scripted in-game checks (./gradlew runTourClient) live in their own source set, never in the jar.
+sourceSets {
+    tour {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+configurations {
+    tourImplementation.extendsFrom implementation
+}
+
+neoForge {
+    version = project.neo_version
+
+    addModdingDependenciesTo(sourceSets.tour)
+
+    parchment {
+        // No parchment mappings to keep the build lightweight and offline-friendly.
+    }
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+        // ./gradlew runTourClient - opens run-tour/saves/frieren_test, sets up scenes, screenshots
+        // them into run-tour/screenshots and quits (see FrierenTour.java)
+        tourClient {
+            client()
+            sourceSet = sourceSets.tour
+            gameDirectory = project.file('run-tour')
+            systemProperty 'frierenmod.tour', 'true'
+            systemProperty 'frierenmod.tour.showcase', System.getProperty('tourShowcase', 'false')
+            systemProperty 'frierenmod.tour.only', System.getProperty('tourOnly', '')
+        }
+    }
+
+    mods {
+        frierenmod {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.tour
+        }
+    }
+}
+
+dependencies {
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    var replaceProperties = [
+        minecraft_version      : minecraft_version,
+        minecraft_version_range: minecraft_version_range,
+        neo_version            : neo_version,
+        neo_version_range      : neo_version_range,
+        loader_version_range   : loader_version_range,
+        mod_id                 : mod_id,
+        mod_name               : mod_name,
+        mod_authors            : mod_authors,
+        mod_description        : mod_description,
+        mod_version            : mod_version
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

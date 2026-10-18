@@ -1,0 +1,8 @@
+{
+  "frieren.kurai_yo": {
+    "subtitle": "subtitles.frierenmod.frieren.kurai_yo",
+    "sounds": [
+      { "name": "frierenmod:frieren/kurai_yo" }
+    ]
+  }
+}

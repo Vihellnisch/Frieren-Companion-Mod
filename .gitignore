@@ -1,0 +1,16 @@
+# build output and caches
+.gradle/
+gradle-home/
+build/
+out/
+.idea/
+*.iml
+__pycache__/
+*.pyc
+
+# local game runs (dev and screenshot tours)
+run/
+run-tour/
+
+# local tool marker
+.abacus.donotdelete

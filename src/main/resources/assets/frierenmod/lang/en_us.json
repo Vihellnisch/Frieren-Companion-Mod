@@ -1,0 +1,36 @@
+{
+  "itemGroup.frierenmod": "Frieren Companion",
+  "entity.frierenmod.frieren": "Frieren",
+  "entity.frierenmod.mimic": "Mimic",
+  "item.frierenmod.mimic_spawn_egg": "Mimic Spawn Egg",
+  "subtitles.frierenmod.frieren.kurai_yo": "Frieren: It's dark! I'm scared!",
+
+  "item.frierenmod.grimoire_basic_magic": "Grimoire of Basic Magic",
+  "item.frierenmod.grimoire_spirit_lore": "Grimoire of Spirit Lore",
+  "item.frierenmod.grimoire_ancient_spells": "Grimoire of Ancient Spells",
+  "item.frierenmod.promise_ring": "Promise Ring",
+  "item.frierenmod.mana_herb": "Mana Herb",
+  "item.frierenmod.frieren_spawn_egg": "Frieren Spawn Egg",
+
+"item.frierenmod.frieren_staff": "Frieren's Staff",
+  "item.frierenmod.verdant_zoltraak_tome": "Tome: Verdant Zoltraak",
+  "item.frierenmod.aqua_barrier_tome": "Tome: Aqua Barrier",
+  "item.frierenmod.mana_storm_tome": "Tome: Mana Storm",
+
+  "tooltip.frierenmod.grimoire": "A rare spell book. Frieren adores these.",
+  "tooltip.frierenmod.frieren_staff": "Right-click: cast selected spell. Hold G: open spell wheel.",
+  "key.frierenmod.spell_wheel": "Spell Wheel",
+  "key.frierenmod.spellbook": "Spellbook (arrange wheel, fuse spells)",
+  "tooltip.frierenmod.frieren_staff_3": "Press H: spellbook. Pick your wheel, fuse spells.",
+  "key.categories.frierenmod": "Frieren Mod",
+  "tooltip.frierenmod.frieren_staff_2": "Casting builds proficiency, strengthening your magic over time.",
+  "tooltip.frierenmod.verdant_zoltraak": "Right-click: fire a beam that bursts life into the land.",
+  "tooltip.frierenmod.aqua_barrier": "Right-click: raise a protective ward of water.",
+  "tooltip.frierenmod.mana_storm": "Right-click: unleash a devastating storm of mana.",
+  "tooltip.frierenmod.promise_ring": "Give to Frieren (as an Ally) to become partners.",
+
+  "frieren.stage.stranger": "Stranger",
+  "frieren.stage.friend": "Friend",
+  "frieren.stage.ally": "Ally",
+  "frieren.stage.partner": "Partner"
+}

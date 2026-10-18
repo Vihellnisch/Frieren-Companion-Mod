@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "frierenmod:grimoire_basic_magic" },
+    { "item": "frierenmod:grimoire_spirit_lore" },
+    { "item": "minecraft:gold_ingot" }
+  ],
+  "result": { "id": "frierenmod:verdant_zoltraak_tome", "count": 1 }
+}

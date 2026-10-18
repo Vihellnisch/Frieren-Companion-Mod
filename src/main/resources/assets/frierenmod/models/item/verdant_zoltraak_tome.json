@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "frierenmod:item/verdant_zoltraak_tome"
+  }
+}

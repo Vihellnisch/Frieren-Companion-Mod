@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "frierenmod:item/grimoire_ancient_spells"
+  }
+}
